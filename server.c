@@ -41,11 +41,10 @@ int main(int argc , char *argv[])
 {  
     //Initialize GPIO pins using wiringPi mapping
     wiringPiSetup();
-    pinMode (DESK_FAN_PIN, OUTPUT);
-    pinMode (LAMP_PIN, OUTPUT);
-    pinMode (BLENDER_PIN,OUTPUT);
-    pinMode (outpin, OUTPUT);
-    pinMode (inpin, INPUT);
+    pinMode (DEVICE_ONE_PIN, OUTPUT);
+    pinMode (DEVICE_TWO_PIN, OUTPUT);
+    pinMode (DEVICE_THREE_PIN,OUTPUT);
+    
     
     //Signal handling
     signal(SIGINT,sig_handler);
